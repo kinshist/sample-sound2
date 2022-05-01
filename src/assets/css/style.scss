@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+img {
+  width: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#app {
+  overflow: hidden;
+  height: 100%;
+}
+.u-wrap {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-logo {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  width: 150px;
+}
+.u-list {
+  width: 688px;
+  margin: 50px auto 0;
+}
+.u-caption {
+  color: #de669a;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  font-weight: bold;
+  &Num {
+    font-size: 50px;
+    padding-left: 10px;
+  }
+}
+.u-title {
+  margin-top: 25px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #de669a;
+}
+.u-text {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 2;
+}
+.u-textFinish {
+  width: 635px;
+  margin: 40px auto 0;
+  font-size: 28px;
+  line-height: 2;
+  background-color: #f0f0f0;
+}
+.u-btnBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 537px;
+  margin: 70px auto 0;
+  &Item {
+    flex: 1;
+    &:nth-child(3) {
+      margin-top: 25px;
+    }
+    &.is-stop {
+      flex: auto;
+      width: 100%;
+    }
+    &.is-back {
+      margin-top: 25px;
+      width: 100%;
+    }
+  }
+}
+.u-movie {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  &.isShow {
+    opacity: 1;
+    z-index: 2;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
